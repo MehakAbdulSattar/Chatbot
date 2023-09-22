@@ -27,13 +27,6 @@ class TeamMemberController extends Controller
             'user_id' => $request->user_id,
         ])]);
 
-        // if ($validator->fails()) {
-        //     return response()->json(['error' => $validator->errors()], 400);
-        // }
-
-        //$teamMember = TeamMember::create($request->all());
-
-        //return response()->json(['message' => 'Team member created successfully', 'data' => $teamMember], 201);
     }
 
 

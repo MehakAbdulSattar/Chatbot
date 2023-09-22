@@ -76,14 +76,6 @@ class TeamController extends Controller
         if (!$team) {
             return response()->json(['error' => 'Team not found'], 404);
         }
-
-        // Check if the user has permission to view this Team
-        // if (Auth()->user()->hasPermission('view_team',$team))
-        // {
-        //     return response()->json(['error' => 'Unauthorized'], 403);
-        // }
-
-        // // If the user has the necessary permission, return the Team data
         return response()->json(['data' => $team]);
     }
 

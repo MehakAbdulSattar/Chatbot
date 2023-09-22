@@ -23,21 +23,7 @@ class DepartmentController extends Controller
 
         return $department;
 
-        // if (Auth()->user()->hasPermission('Wow',$department)) {
-        //     return $department;
-        // } else {
-        //     // User does not have permission
-        //     return response()->json(['message' => 'Permission denied'], 403);
-        // }
-
     }
-    
-
-    // /**
-    //  * Summary of updating
-    //  * @param \Illuminate\Http\Request $request
-    //  * @return \Illuminate\Http\JsonResponse|mixed
-    //  */
     public function updating(Request $request,$id)
     {
         $items= Department::find($id);
