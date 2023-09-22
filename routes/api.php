@@ -36,7 +36,7 @@ Route::middleware(['auth:api', 'permission:department_view'])->get('get',[Depart
 
 // Routes for TeamController
 Route::middleware(['auth:api', 'permission:team_view'])->get('/teamindex', [TeamController::class, 'index']);
-Route::middleware(['auth:api', 'permission:team_create'])->post('/teamcreate', [TeamController::class, 'store']);
+Route::middleware(['auth:api', 'permission:team_create'])->post('/teamcreate', [TeamController::class, 'createTeam']);
 Route::middleware(['auth:api', 'permission:team_view'])->get('/teamshow/{id}', [TeamController::class, 'show']);
 Route::middleware(['auth:api', 'permission:team_edit'])->post('/teamupdate/{id}', [TeamController::class, 'update']);
 Route::middleware(['auth:api', 'permission:team_delete'])->delete('/teamdestroy/{id}', [TeamController::class, 'destroy']);
