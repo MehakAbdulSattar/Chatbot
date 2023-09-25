@@ -66,3 +66,19 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 
+Project: 
+CRM system
+
+Project objective: 
+The Project Focuses on using Laravel Spatie Package. This project is totally permission based. In this Project Users can have different permissions to different resources. Some users may have the permissions to create departments and delete them while other users have permissions to create teams within the department. Some of them have permission to handle all resources.
+
+Installation Guideline:
+Set you own .env file
+composer install
+php artisan migrate
+php artisan db:seed --class=DummyDatabaseSeeder
+php artisan db:seed
+
+THANK YOU!
+
+
